@@ -23,4 +23,13 @@ class Student {
             --studentTotal;
             cout << endl;
         }
+
+        static int getStudentTotal()
+        {
+            return studentTotal;
+        }
+
+        
+    
 };
+   
