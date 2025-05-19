@@ -36,3 +36,26 @@ class Student {
 
 };
 
+int Student::studentTotal = 0;
+
+int main(){
+
+    cout << "Student total is " << Student::getStudentTotal() << endl;
+
+    Student st1("Maman" , 40);
+    Student st2("Agus" , 34);
+
+    Student::setStudentTotal(10);
+   
+    cout << "Student total is " << Student::getStudentTotal() << endl;
+    { 
+        Student st3("Budi" , 19);
+        Student st4("Caca" , 21);
+        cout << "Student total is " << Student::getStudentTotal() << endl;
+    }
+    
+    cout << "Student total is " << Student::getStudentTotal() << endl;
+   return 0;
+    
+}
+   
