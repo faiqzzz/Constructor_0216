@@ -29,7 +29,10 @@ class Student {
             return studentTotal;
         }
 
-        
-    
+        static void setStudentTotal (int a)
+        {
+            studentTotal = a;
+        }
+
 };
-   
+
